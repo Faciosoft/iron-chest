@@ -9,6 +9,18 @@ Made by [Faciosoft](https://github.com/Faciosoft) with main author [Maciej Dębo
 ```ts
 import Storage, { Cluster } from '../src/index'
 
+const storage: Storage = new Storage()
+storage.init(__dirname + '/storage')
+
+const my_files = storage.getCluster('my_files') || storage.createCluster('my_files')
+
+my_files.useEncryptionKey('this is my very secret key')
+my_files.fileWrite('message', 'this is my very secret message')
+```
+
+```ts
+import Storage, { Cluster } from '../src/index'
+
 // ...
 
 const storage: Storage = new Storage()
