@@ -71,8 +71,8 @@ app.on('register', ({ username, password }) => {
 ## Avaliable cluster methods:
 ```ts
 cluster.useEncryptionKey(encryption_key: string): void
-cluster.getCluster(cluster_name: string): Cluser|void
-cluster.createCluster(cluster_name: string): Cluser|void
+cluster.getCluster(cluster_name: string): Cluster|void
+cluster.createCluster(cluster_name: string): Cluster|void
 cluster.fileExists(name: string): boolean
 cluster.fileNotExists(name: string): boolean
 cluster.fileWrite(name: string, content: string): void
