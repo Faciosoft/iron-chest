@@ -1,6 +1,11 @@
 # Iron Chest
 Iron chest is powerful cluster-storage file management liblary for nodejs with typescript support
 
+## Installation
+```
+npm i iron-chest
+```
+
 ## Authors
 Made by [Faciosoft](https://github.com/Faciosoft) with main author [Maciej Dębowski](https://maciejdebowski.pl)
 
