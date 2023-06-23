@@ -85,3 +85,13 @@ cluster.fileRead(name: string): string
 cluster.fileRemove(name: string): string
 cluster.fileRename(name: string): void
 ```
+
+## Storage Config
+Inside storage folder create **iron-chest.config.json** file with content:
+```json
+{
+    "storage": {
+        "name": "STORAGE_NAME"
+    }
+}
+```
